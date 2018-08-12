@@ -30,7 +30,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-	var mb = L.tileLayer.mbTiles('./kort100.mbtiles', {
+	var mb = L.tileLayer.mbTiles('https://drive.google.com/open?id=1o1OwuGkrzKLY9Ij34dA3nPZHAxiQrX6p', {
 		minZoom: 0	}).addTo(map);
 
 	mb.on('databaseloaded', function(ev) {
